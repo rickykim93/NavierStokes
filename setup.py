@@ -1,15 +1,19 @@
 from setuptools import setup, find_packages
+from NavierStokes import __version__
+from codecs import open
+from os import path
 
-version = open('VERSION').read().strip()
+here = path.abspath(path.dirname(__file__))
 
 setup(
     name='NavierStokes',
-    version=version,
+    version=__version__,
     author='Kyu Mok (Ricky) Kim',
     author_email='rickykim93@hotmail.com',
     url='http://rickykim.net',
     description='Navier Stokes Calculator',
-    long_description=open('README.md').read().strip(),
+    long_description=open(path.join(here, 'README.md'), encoding='utf-8').read(),
+    long_description_content_type="text/markdown",
     packages=find_packages(),
     install_requires=[
         'numpy',
@@ -19,7 +23,7 @@ setup(
     test_suite='tests',
     entry_points={
         'console_scripts': [
-            'packagename = packagename.__main__:main',
+            'NavierStokes = NavierStokes.__main__:main',
         ]
     }
 )
