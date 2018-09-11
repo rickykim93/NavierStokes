@@ -14,7 +14,7 @@ description - testing before v1 release
 
 ## Running the tests
 ```python
-python -m unittest tests.test_test
+python -m unittest tests.TDMAsolver
 ```
 
 ## Deployment

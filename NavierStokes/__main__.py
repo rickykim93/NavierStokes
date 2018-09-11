@@ -1,9 +1,11 @@
 import argparse
 from NavierStokes.test import test
+from NavierStokes.TDMAsolver import TDMAsolver
 
 def main():
     parser=argparse.ArgumentParser()
-    parser.add_argument("t", help="just a test")
+    parser.add_argument("-t", help="just a test")
     a = parser.parse_args()
 
-    test()
+    if a.t:
+        test()
