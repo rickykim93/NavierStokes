@@ -15,6 +15,10 @@ This is the same formula that ANSYS Fluent uses.
 ```python
 pip install NavierStokes
 ```
+To upgrade:
+```python
+pip install NavierStokes -U
+```
 
 ## Running the tests
 Requires `pytest`
