@@ -1,27 +1,39 @@
 # NavierStokes
-
-description - testing before v1 release
-
-## Table of Contents
-* [Getting Started](#getting-started)
-* [Acknowledgements](#acknowledgements)
+Pre v.1.0.0 Release  - Still in development
+This is a Navier Stokes calculator which is used
+in computational fluid dynamics.
+This is the same formula that ANSYS Fluent uses.
 
 ## Getting Started
 
 ### Prerequisites
+* `Numpy`
+* `Pandas`
+* `Scipy`
 
 ### Installing
+```python
+pip install NavierStokes
+```
 
 ## Running the tests
+Requires `pytest`
 ```python
 python -m unittest tests.TDMAsolver
 ```
 
-## Deployment
+## Documentation
+The documentation for:
+* [Command Line Functions]()
+* [TDMA (Tridiagnal Matrix Algorithm)]()
 
-## Built With
+## See it in Action!
+[This page](WIP) uses this module.
 
 ## Contributing
+All contributions, bug reports, bug fixes, documentation improvements, enhancements and ideas are welcome.
+
+Report all bugs and issues to [this page](https://github.com/rickykim93/NavierStokes/issues)
 
 ## Versioning
 I use [SemVer](https://semver.org) for versioning.
