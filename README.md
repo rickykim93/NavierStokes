@@ -1,6 +1,6 @@
 # NavierStokes
 
-description
+description - testing before v1 release
 
 ## Table of Contents
 * [Getting Started](#getting-started)
