@@ -36,3 +36,6 @@ def TDMAsolver(aa, bb, cc, dd):
         x[j] = (d[j] - c[j] * x[j + 1]) / b[j]
 
     return x
+
+#TODO: implement xml
+#def TDMA

@@ -19,6 +19,7 @@ setup(
         'numpy',
         'pandas',
         'scipy',
+        'matplotlib',
     ],
     test_suite='tests',
     entry_points={
