@@ -15,9 +15,9 @@ setup(
     long_description=open(path.join(here, 'README.md'), encoding='utf-8').read(),
     long_description_content_type="text/markdown",
     packages=find_packages(),
+    include_package_data=True,
     install_requires=[
         'numpy',
-        'pandas',
         'scipy',
         'matplotlib',
     ],

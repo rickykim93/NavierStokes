@@ -1,3 +1,4 @@
 {
+  "tests/test_TDMAsolver.py::Test_test::test2": true, 
   "tests/test_test.py::Test_test::test2": true
 }

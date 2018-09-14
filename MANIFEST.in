@@ -1,2 +1,3 @@
 include README.md
-include NavierStokes/README.md
+include LICENSE
+recursive-include NavierStokes/*

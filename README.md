@@ -31,7 +31,7 @@ The documentation for:
 * [Command Line Functions]()
 * [TDMA (Tridiagnal Matrix Algorithm)]()
 
-## See it in Action!
+## Example - See it in Action!
 [This page](WIP) uses this module.
 
 ## Contributing

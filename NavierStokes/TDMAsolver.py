@@ -15,9 +15,8 @@ using TDMA method using a,b,c,d arrays.
 Refer to my report for detailed explanation.
 """
 
-# importing numpy for convenience
 import numpy as np
-
+import xml.etree.ElementTree as ET
 
 # TDMA Solver
 def TDMAsolver(aa, bb, cc, dd):
@@ -37,5 +36,16 @@ def TDMAsolver(aa, bb, cc, dd):
 
     return x
 
-#TODO: implement xml
-#def TDMA
+def main():
+    #TODO fix config.xml reading on module
+    tree = ET.parse('config.xml')
+    root=tree.getroot()
+    for child in root:
+        if child.tag=='TDMAsolver':
+            return TDMAsolver([float(s) for s in child.find('aa').text.split(',')],
+                              [float(s) for s in child.find('bb').text.split(',')],
+                              [float(s) for s in child.find('cc').text.split(',')],
+                              [float(s) for s in child.find('dd').text.split(',')])
+
+if __name__ == '__main__':
+    print (main())
