@@ -1,11 +1,16 @@
 # NavierStokes Command Line
-## Mode
+## Modes
 Alias|Mode
 ---|---
+-v|Version
+-e|Edit Config File
 -td|TDMA solver
-### Optional Variables
-#### TDMA solver
-Still in development
 
-#### Example
+## Example
+```python
+NavierStokes -e
+```
 
+```python
+NavierStokes -td
+```

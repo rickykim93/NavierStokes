@@ -1,6 +1,7 @@
 # NavierStokes
 Pre v.1.0.0 Release  - Still in development
-This is a Navier Stokes calculator which is used
+This is a Navier Stokes calculator using FVM 
+(Finite Volume Method) which is used
 in computational fluid dynamics.
 This is the same formula that ANSYS Fluent uses.
 
@@ -28,11 +29,13 @@ python -m unittest tests.test_TDMAsolver
 
 ## Documentation
 The documentation for:
-* [Command Line Functions]()
-* [TDMA (Tridiagnal Matrix Algorithm)]()
+* [Command Line Functions](https://github.com/rickykim93/NavierStokes/blob/master/NavierStokes/README.md)
+* [Diffusion](https://rickykim.net) - LinkWIP
+* [Advection](https://rickykim.net) - LinkWIP
+* [SIMPLE](https://rickykim.net) - LinkWIP
 
 ## Example - See it in Action!
-[This page](WIP) uses this module.
+[This page](https://rickykim.net) uses this module. - LinkWIP
 
 ## Contributing
 All contributions, bug reports, bug fixes, documentation improvements, enhancements and ideas are welcome.
@@ -51,5 +54,5 @@ This project is licensed under the MIT License - see the [License](https://githu
 file for details.
 
 ## Acknowledgements
-* MIE 1210: Computational Fluid Mechanics - Course from University of Toronto
+* [MIE 1210: Computational Fluid Mechanics](https://rickykim.net) - LinkWIP Course from University of Toronto
 for teaching me Navier Stokes equations and how to implement them
