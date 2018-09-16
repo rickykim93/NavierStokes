@@ -17,6 +17,8 @@ Refer to my report for detailed explanation.
 
 import numpy as np
 import xml.etree.ElementTree as ET
+import os
+from datetime import datetime
 
 # TDMA Solver
 def TDMAsolver(aa, bb, cc, dd):
@@ -37,15 +39,15 @@ def TDMAsolver(aa, bb, cc, dd):
     return x
 
 def main():
-    #TODO fix config.xml reading on module
-    tree = ET.parse('config.xml')
+    tree = ET.parse(os.path.join(os.path.dirname(os.path.realpath(__file__)),'config.xml'))
     root=tree.getroot()
     for child in root:
         if child.tag=='TDMAsolver':
-            return TDMAsolver([float(s) for s in child.find('aa').text.split(',')],
-                              [float(s) for s in child.find('bb').text.split(',')],
-                              [float(s) for s in child.find('cc').text.split(',')],
-                              [float(s) for s in child.find('dd').text.split(',')])
+            ans= TDMAsolver([float(s) for s in child.find('aa').text.split(',')],
+                            [float(s) for s in child.find('bb').text.split(',')],
+                            [float(s) for s in child.find('cc').text.split(',')],
+                            [float(s) for s in child.find('dd').text.split(',')])
+    np.savetxt(os.path.join(os.path.expanduser("~/Desktop"),"TDMA_{}.csv".format(datetime.now().strftime('%Y%b%d_%H%M%S'))), ans, delimiter=",")
 
 if __name__ == '__main__':
-    print (main())
+    main()

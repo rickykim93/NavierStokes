@@ -8,8 +8,8 @@ This is the same formula that ANSYS Fluent uses.
 
 ### Prerequisites
 * `Numpy`
-* `Pandas`
 * `Scipy`
+* `MatplotLib`
 
 ### Installing
 ```python
@@ -23,7 +23,7 @@ pip install NavierStokes -U
 ## Running the tests
 Requires `pytest`
 ```python
-python -m unittest tests.TDMAsolver
+python -m unittest tests.test_TDMAsolver
 ```
 
 ## Documentation
