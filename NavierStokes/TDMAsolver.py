@@ -38,7 +38,7 @@ def TDMAsolver(aa, bb, cc, dd):
 
     return x
 
-def main():
+def cmd_TDMA():
     tree = ET.parse(os.path.join(os.path.dirname(os.path.realpath(__file__)),'config.xml'))
     root=tree.getroot()
     for child in root:
@@ -50,4 +50,4 @@ def main():
     np.savetxt(os.path.join(os.path.expanduser("~/Desktop"),"TDMA_{}.csv".format(datetime.now().strftime('%Y%b%d_%H%M%S'))), ans, delimiter=",")
 
 if __name__ == '__main__':
-    main()
+    cmd_TDMA()

@@ -6,36 +6,36 @@ in computational fluid dynamics.
 This is the same formula that ANSYS Fluent uses.
 
 ## Getting Started
-
 ### Prerequisites
 * `Numpy`
 * `Scipy`
 * `MatplotLib`
 
 ### Installing
-```python
+```commandline
 pip install NavierStokes
 ```
 To upgrade:
-```python
+```commandline
 pip install NavierStokes -U
 ```
 
 ## Running the tests
 Requires `pytest`
-```python
+```commandline
 python -m unittest tests.test_TDMAsolver
 ```
 
 ## Documentation
 The documentation for:
 * [Command Line Functions](https://github.com/rickykim93/NavierStokes/blob/master/NavierStokes/README.md)
-* [Diffusion](https://rickykim.net) - LinkWIP
-* [Advection](https://rickykim.net) - LinkWIP
-* [SIMPLE](https://rickykim.net) - LinkWIP
+* [TDMA](https://rickykim.net/NSDoc#tdma) - LinkWIP
+* [Diffusion](https://rickykim.net/NSDoc#diffusion) - LinkWIP
+* [Advection](https://rickykim.net/NSDoc#advection) - LinkWIP
+* [SIMPLE](https://rickykim.net/NSDoc#simple) - LinkWIP
 
 ## Example - See it in Action!
-[This page](https://rickykim.net) uses this module. - LinkWIP
+[This page](https://rickykim.net/NavierStokes) uses this module. - LinkWIP
 
 ## Contributing
 All contributions, bug reports, bug fixes, documentation improvements, enhancements and ideas are welcome.

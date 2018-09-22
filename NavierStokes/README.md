@@ -4,13 +4,13 @@ Alias|Mode
 ---|---
 -v|Version
 -e|Edit Config File
--td|TDMA solver
+-td|TDMA solver - saves results on desktop
 
 ## Example
-```python
+```commandline
 NavierStokes -e
 ```
 
-```python
+```commandline
 NavierStokes -td
 ```

@@ -1,6 +1,5 @@
 import argparse
-import NavierStokes as NS
-from NavierStokes.TDMAsolver import main as TDMA
+import NavierStokes as ns
 from subprocess import call
 import os
 
@@ -14,6 +13,6 @@ def main():
     if a.version:
         return NS.__version__
     elif a.tdma:
-        TDMA()
+        ns.cmd_TDMA()
     elif a.edit:
         call('nano {}'.format(os.path.join(os.path.dirname(os.path.realpath(__file__)),'config.xml')), shell=True)

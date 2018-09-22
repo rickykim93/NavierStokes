@@ -10,7 +10,7 @@ setup(
     version=__version__,
     author='Kyu Mok (Ricky) Kim',
     author_email='rickykim93@hotmail.com',
-    url='http://rickykim.net',
+    url='https://github.com/rickykim93/NavierStokes',
     description='Navier Stokes Calculator',
     long_description=open(path.join(here, 'README.md'), encoding='utf-8').read(),
     long_description_content_type="text/markdown",
