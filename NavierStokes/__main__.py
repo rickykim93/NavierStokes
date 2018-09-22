@@ -11,7 +11,7 @@ def main():
     a = parser.parse_args()
 
     if a.version:
-        return NS.__version__
+        return ns.__version__
     elif a.tdma:
         ns.cmd_TDMA()
     elif a.edit:
