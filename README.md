@@ -29,13 +29,13 @@ python -m unittest tests.test_TDMAsolver
 ## Documentation
 The documentation for:
 * [Command Line Functions](https://github.com/rickykim93/NavierStokes/blob/master/NavierStokes/README.md)
-* [TDMA](https://rickykim.net/NSDoc#tdma) - LinkWIP
-* [Diffusion](https://rickykim.net/NSDoc#diffusion) - LinkWIP
-* [Advection](https://rickykim.net/NSDoc#advection) - LinkWIP
-* [SIMPLE](https://rickykim.net/NSDoc#simple) - LinkWIP
+* [TDMA](https://rickykim.net/NSDoc#tdma)
+* [Diffusion](https://rickykim.net/NSDoc#diffusion)
+* [Advection](https://rickykim.net/NSDoc#advection)
+* [SIMPLE](https://rickykim.net/NSDoc#simple)
 
 ## Example - See it in Action!
-[This page](https://rickykim.net/NavierStokes) uses this module. - LinkWIP
+[This page](https://rickykim.net/NavierStokes) uses this module.
 
 ## Contributing
 All contributions, bug reports, bug fixes, documentation improvements, enhancements and ideas are welcome.
@@ -54,5 +54,5 @@ This project is licensed under the MIT License - see the [License](https://githu
 file for details.
 
 ## Acknowledgements
-* [MIE 1210: Computational Fluid Mechanics](https://rickykim.net) - LinkWIP Course from University of Toronto
+* [MIE 1210: Computational Fluid Mechanics](https://rickykim.net/graduate) Course from University of Toronto
 for teaching me Navier Stokes equations and how to implement them
